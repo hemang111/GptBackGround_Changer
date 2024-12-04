@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px; /* Increased width */
+    }
+    input[type="color"], input[type="text"] {
+      margin: 10px 0;
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 5px 10px;
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #005A9E;
+    }
+    .option {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Change Background</h3>
+  <div class="option">
+    <label>
+      <input type="radio" name="bgOption" value="color" checked> Color
+    </label>
+    <input type="color" id="colorPicker">
+  </div>
+  <div class="option">
+    <label>
+      <input type="radio" name="bgOption" value="image"> Image URL
+    </label>
+    <input type="text" id="imageUrl" placeholder="Enter image URL" disabled>
+  </div>
+  <button id="applyChange">Apply</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
